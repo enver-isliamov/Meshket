@@ -64,10 +64,9 @@
 				</div>
 				<div class="right-header">
                 	<p><a href="mailto:ld-tara4@mail.ru" class="header-a">ld-tara4@mail.ru</a><a href="mailto:ld-tara4@mail.ru" class="header-a hidden">ld-tara@mail.ru</a></p>
-					<p class="header-phones"><a href="tel:88632236414" class="header-a">8(863) 223-64-14</a>
-<a href="tel:+79185552505" class="header-a">8(918) 555-25-05</a>
-<a href="tel:+79185542505" class="header-a">8(918) 554-25-05</a>
- <!--<a class="header-a" href="tel:88632236414">8(863)223-64-14</p>-->
+					<p class="header-phones"><a href="tel:+79788323190" class="header-a">+7 (978) 832-31-90</a>
+<a href="tel:+79788323190" class="header-a">+7 (978) 832-31-90</a>
+ <!--<a class="header-a" href="tel:+79788323190">+79788323190</p>-->
 					<button type="button" class="btn popup-open" rel="action1"><span>Заказать звонок</span></button>
 				</p></div>
 				<div class="trubka">
@@ -302,9 +301,8 @@
 						</div>
 					</div>
 					<div class="right-footer">
-					    <p><a href="tel:88632236414" class="footer-a">8(863) 223-64-14 </a>
-<a href="tel:+79185552505" class="footer-a">8(918) 555-25-05</a>
-<a href="tel:+79185542505" class="footer-a">8(918) 554-25-05</a>
+					    <p><a href="tel:88632236414" class="footer-a">+7 (978) 832-31-90 </a>
+<a href="tel:+79788323190" class="footer-a">+7 (978) 832-31-90</a>
 
 					    </p>
 						<button type="button" class="btn popup-open" rel="action1"><span>Заказать звонок</span></button>
@@ -324,7 +322,7 @@
   "@type" : "LocalBusiness",
   "url": "https://tigaz.ru",
   "priceRange": "5-120RUB", 
-  "telephone": "8 (863) 275-25-05",
+  "telephone": "+7 (978) 832-31-90",
   "name": "Тигаз-Трейд", 
   "image": [
   "https://tigaz.ru/upload/2.png"
@@ -333,7 +331,7 @@
   "email" : "Ld-tara@mail.ru",
   "address" : {
     "@type" : "PostalAddress",
-    "streetAddress" : "344037, Россия, Ростовская область, г. Ростов-на-Дону, ул.Мурлычева, 10"
+    "streetAddress" : "344037, Россия, Ростовская область, г. Ростов-Мама, ул.Мурлычева, 10"
   },
   "openingHoursSpecification" : [ {
     "@type" : "OpeningHoursSpecification",
@@ -353,7 +351,7 @@
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "url": "http://simferopol.tigaz.ru/",
-  "telephone" : "+7(978)131-67-54", 
+  "telephone" : "+7 (978) 832-31-90", 
   "image": [
   "http://simferopol.tigaz.ru/assets/img/logo.png"
   ],
@@ -361,7 +359,7 @@
   "priceRange": "5-120RUB",
   "address" : {
     "@type" : "PostalAddress",
-    "streetAddress" : "г. Симферополь, пр. Кирова, 29/1, офисно-торговый комплекс Пассаж"
+    "streetAddress" : "пгт. Урожайное, пр. Шевкета, 21/1, офисно-торговый комплекс ДВОРИК"
   }
 } ]
 </script>
@@ -409,67 +407,10 @@
 		<script src="/assets/js/scripts.js"></script>
 		<script src="/assets/js/jquery.matchHeight-min.js"></script>
 		<script src="/assets/js/custom.js"></script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(28812400, "init", {
-        id:28812400,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
 <noscript><div><img src="https://mc.yandex.ru/watch/28812400" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 
-    <script>
-        $(document).ready(function()
-        {
-            var popup_action = 0;
-            
-            $("header .popup-open").click(function(){popup_action = 0});
-            $(".products-section .popup-open").click(function(){popup_action = 1});
-            $(".questions-section .popup-open").click(function(){popup_action = 2});
-            $("footer .popup-open").click(function(){popup_action = 3});
-            $(".main-prod-card .popup-open").click(function(){popup_action = 4});
-            
-            $("#callback-form").submit(function()
-            {
-                var actions = ['CALL', 'CONS', 'CONS_FUTER', 'CALL_FUTER', 'ORDER'];
-                
-                ym(28812400, 'reachGoal', actions[popup_action]);
-                gtag('event', actions[popup_action], {event_action: actions[popup_action]});
-            });
-            $("#consult-form").submit(function()
-            {
-                ym(28812400, 'reachGoal', 'CONS_FUTER');
-                gtag('event', 'CONS_FUTER', {event_action: 'CONS_FUTER'});
-            });
-            $(".right-contacts-wrap .contacts-callback").submit(function()
-            {
-                ym(28812400, 'reachGoal', 'LETTER');
-                gtag('event', 'LETTER', {event_action: 'LETTER'});
-            });
-            
-            $("#names").on( "keyup", function (e) {
-                console.log('input');
-            });
-            
-        });
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133661322-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-133661322-1');
-</script>
+   
 
 	<script type="text/javascript" src="/assets/components/ajaxform/js/default.js"></script>
 <script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":1});</script>
