@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -16,13 +17,18 @@ body {
 }
 
 header {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     float: left;
+    font-size: 24px;
 }
 
 nav {
@@ -41,34 +47,93 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
 }
 
 section {
-    padding: 40px 0;
+    padding: 80px 0;
+    text-align: center;
 }
 
 section h2 {
     margin-bottom: 20px;
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .product-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .product-item {
-    background: #f4f4f4;
+    background: #fff;
     padding: 20px;
     width: 30%;
-    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    color: #2c3e50;
 }
 
 footer {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
+
+/* Анимации */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Задержка для элементов */
+.product-item:nth-child(1) { animation-delay: 0.2s; }
+.product-item:nth-child(2) { animation-delay: 0.4s; }
